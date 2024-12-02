@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (paymentMethod === "mercado-pago") {
         alert("Reserva tu beat por MP monto: $500. Y segui las instrucciones");
-        window.open("https://mpago.la/25hyFZG", "_blank");
+        window.open("https://mpago.la/31Bntwu", "_blank");
       } else if (paymentMethod === "paypal") {
         alert("Redirigiendo a PayPal...");
         window.open("https://www.paypal.me/boumperx/", "_blank");

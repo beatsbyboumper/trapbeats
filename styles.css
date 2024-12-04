@@ -96,6 +96,21 @@ h1, h2, p {
     background-color: #666;
     transform: scale(1.1);
   }
+
+  .debajo {
+    text-align: center;
+    display: flex;
+    margin: 1;
+    color: #696969;
+    background-color: #111;
+    margin-bottom: 50px;
+    border-width: 6cm;
+    padding: 30px;
+
+  }
+
+
+
 .footer {
     text-align: center;
     padding: 10px;
@@ -103,4 +118,10 @@ h1, h2, p {
     margin-top: 20px;
     font-size: 0.9em;
     color: #aaa;
+}
+.ref {
+    align-self: auto;
+    margin: 0;
+    padding: 1;
+    color: white;
 }

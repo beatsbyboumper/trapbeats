@@ -1,32 +1,42 @@
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #111;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 h1, h2, p {
     margin: 0;
 }
 
-.header {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-
+@keyframes brillo {
+    0% {
+        text-shadow: 0 0 5px #832717, 0 0 10px #85341b, 0 0 15px #9c2921, 0 0 20px #8b3c17, 0 0 30px #8b4f17;
+    }
+    50% {
+        text-shadow: 0 0 20px #942525, 0 0 30px #941f1f, 0 0 40px #8b2121, 0 0 50px #8b1717, 0 0 60px #8b1717;
+    }
+    100% {
+        text-shadow: 0 0 5px #832323, 0 0 10px #8d2323, 0 0 15px #8a2222, 0 0 20px #8b2817, 0 0 30px #8b3217;
+    }
 }
 
+.titulo {
+    color: #e02b2b;
+    font-size: 2.5em;
+    animation: brillo 1.5s infinite alternate;
+}
 .title {
     font-size: 2.5em;
-    color: #ff3333;
-    text-shadow: 0 0 10px #ff3333;
+    color: #e04f2b;
+    text-shadow: 0 0 10px #8b1b17;
 }
 
 .subtitle {
     font-size: 1.2em;
-    color: #fff;
+    color: #ffffff;
     margin-top: 10px;
 }
 
@@ -69,7 +79,7 @@ h1, h2, p {
     font-size: 1em;
     font-weight: bold;
     color: #fff;
-    background-color: #ff3333;
+    background-color: #da3428;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -77,17 +87,17 @@ h1, h2, p {
 }
 
 .buy-button:hover {
-    background-color: #cc0000;
+    background-color: #6d0808;
     transform: translateY(-3px);
 }
 .play-button {
-    font-size: 1.2em;
-    padding: 10px;
-    margin: 5px;
+    font-size: 1.5em;
+    padding: 16px;
+    margin: 15px;
     color: #fff;
-    background-color: #444;
+    background-color: #222;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
   }
@@ -124,4 +134,36 @@ h1, h2, p {
     margin: 0;
     padding: 1;
     color: white;
+}
+h1 {
+    text-align: center;
+    
+}
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.current-time, .total-time {
+    font-size: 14px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.img {
+    display: flex; /* Flexbox para centrar */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    padding: 20px; /* Espacio alrededor del logo */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.img img {
+    width: 150px; /* Ancho del logo */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Asegura que no tenga márgenes adicionales */
 }

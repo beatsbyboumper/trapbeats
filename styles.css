@@ -167,18 +167,3 @@ h1 {
     height: auto; /* Mantiene la proporción */
     display: block; /* Asegura que no tenga márgenes adicionales */
 }
-.video-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.video-bg iframe {
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-}

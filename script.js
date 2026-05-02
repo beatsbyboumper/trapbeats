@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (paymentMethod === "mercado-pago") {
         
-        window.open("https://beatsbyboumper.github.io/confirmacion/", "_blank");
+        window.open("https://mpago.la/12pZGCf", "_blank");
       } else if (paymentMethod === "paypal") {
         alert("Redirigiendo a PayPal...");
         window.open("https://www.paypal.me/boumperx/", "_blank");
